@@ -39,7 +39,7 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="data/Bahrain_Date_Palms_1.js"></script>
+        <script src="data/Bahrain_Dates_1.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -67,7 +67,7 @@
         });
         layer_OSMStandard_0;
         map.addLayer(layer_OSMStandard_0);
-        function pop_Bahrain_Date_Palms_1(feature, layer) {
+        function pop_Bahrain_Dates_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2"><strong>FILE</strong><br />' + (feature.properties['FILE'] !== null ? autolinker.link(feature.properties['FILE'].toLocaleString()) : '') + '</td>\
@@ -79,10 +79,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Bahrain_Date_Palms_1_0() {
+        function style_Bahrain_Dates_1_0() {
             return {
-                pane: 'pane_Bahrain_Date_Palms_1',
-                radius: 8.0,
+                pane: 'pane_Bahrain_Dates_1',
+                radius: 7.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -91,32 +91,32 @@
                 weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(239,10,44,1.0)',
+                fillColor: 'rgba(190,129,22,1.0)',
                 interactive: true,
             }
         }
-        map.createPane('pane_Bahrain_Date_Palms_1');
-        map.getPane('pane_Bahrain_Date_Palms_1').style.zIndex = 401;
-        map.getPane('pane_Bahrain_Date_Palms_1').style['mix-blend-mode'] = 'normal';
-        var layer_Bahrain_Date_Palms_1 = new L.geoJson(json_Bahrain_Date_Palms_1, {
+        map.createPane('pane_Bahrain_Dates_1');
+        map.getPane('pane_Bahrain_Dates_1').style.zIndex = 401;
+        map.getPane('pane_Bahrain_Dates_1').style['mix-blend-mode'] = 'normal';
+        var layer_Bahrain_Dates_1 = new L.geoJson(json_Bahrain_Dates_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Bahrain_Date_Palms_1',
-            layerName: 'layer_Bahrain_Date_Palms_1',
-            pane: 'pane_Bahrain_Date_Palms_1',
-            onEachFeature: pop_Bahrain_Date_Palms_1,
+            dataVar: 'json_Bahrain_Dates_1',
+            layerName: 'layer_Bahrain_Dates_1',
+            pane: 'pane_Bahrain_Dates_1',
+            onEachFeature: pop_Bahrain_Dates_1,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_Bahrain_Date_Palms_1_0(feature));
+                return L.circleMarker(latlng, style_Bahrain_Dates_1_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Bahrain_Date_Palms_1);
-        map.addLayer(layer_Bahrain_Date_Palms_1);
+        bounds_group.addLayer(layer_Bahrain_Dates_1);
+        map.addLayer(layer_Bahrain_Dates_1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/Bahrain_Date_Palms_1.png" /> Bahrain_Date_Palms': layer_Bahrain_Date_Palms_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Bahrain_Dates_1.png" /> Bahrain_Dates': layer_Bahrain_Dates_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
