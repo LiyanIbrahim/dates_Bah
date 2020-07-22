@@ -39,7 +39,7 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="data/Bahrain_DatePalms_1.js"></script>
+        <script src="data/Bahrain_Date_Palms_1.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -67,7 +67,7 @@
         });
         layer_WikimediaMap_0;
         map.addLayer(layer_WikimediaMap_0);
-        function pop_Bahrain_DatePalms_1(feature, layer) {
+        function pop_Bahrain_Date_Palms_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2"><strong>FILE</strong><br />' + (feature.properties['FILE'] !== null ? autolinker.link(feature.properties['FILE'].toLocaleString()) : '') + '</td>\
@@ -82,10 +82,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Bahrain_DatePalms_1_0(feature) {
+        function style_Bahrain_Date_Palms_1_0(feature) {
             if (feature.properties['DATE_PALMS'] >= 300.000000 && feature.properties['DATE_PALMS'] <= 1400.000000 ) {
                 return {
-                pane: 'pane_Bahrain_DatePalms_1',
+                pane: 'pane_Bahrain_Date_Palms_1',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -99,9 +99,9 @@
                 interactive: true,
             }
             }
-            if (feature.properties['DATE_PALMS'] >= 1400.000000 && feature.properties['DATE_PALMS'] <= 2182.000000 ) {
+            if (feature.properties['DATE_PALMS'] >= 1400.000000 && feature.properties['DATE_PALMS'] <= 2420.000000 ) {
                 return {
-                pane: 'pane_Bahrain_DatePalms_1',
+                pane: 'pane_Bahrain_Date_Palms_1',
                 radius: 7.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -115,9 +115,9 @@
                 interactive: true,
             }
             }
-            if (feature.properties['DATE_PALMS'] >= 2182.000000 && feature.properties['DATE_PALMS'] <= 4600.000000 ) {
+            if (feature.properties['DATE_PALMS'] >= 2420.000000 && feature.properties['DATE_PALMS'] <= 4860.000000 ) {
                 return {
-                pane: 'pane_Bahrain_DatePalms_1',
+                pane: 'pane_Bahrain_Date_Palms_1',
                 radius: 12.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -131,9 +131,9 @@
                 interactive: true,
             }
             }
-            if (feature.properties['DATE_PALMS'] >= 4600.000000 && feature.properties['DATE_PALMS'] <= 8430.000000 ) {
+            if (feature.properties['DATE_PALMS'] >= 4860.000000 && feature.properties['DATE_PALMS'] <= 8290.000000 ) {
                 return {
-                pane: 'pane_Bahrain_DatePalms_1',
+                pane: 'pane_Bahrain_Date_Palms_1',
                 radius: 18.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -147,9 +147,9 @@
                 interactive: true,
             }
             }
-            if (feature.properties['DATE_PALMS'] >= 8430.000000 && feature.properties['DATE_PALMS'] <= 19000.000000 ) {
+            if (feature.properties['DATE_PALMS'] >= 8290.000000 && feature.properties['DATE_PALMS'] <= 19000.000000 ) {
                 return {
-                pane: 'pane_Bahrain_DatePalms_1',
+                pane: 'pane_Bahrain_Date_Palms_1',
                 radius: 28.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -164,28 +164,28 @@
             }
             }
         }
-        map.createPane('pane_Bahrain_DatePalms_1');
-        map.getPane('pane_Bahrain_DatePalms_1').style.zIndex = 401;
-        map.getPane('pane_Bahrain_DatePalms_1').style['mix-blend-mode'] = 'normal';
-        var layer_Bahrain_DatePalms_1 = new L.geoJson(json_Bahrain_DatePalms_1, {
+        map.createPane('pane_Bahrain_Date_Palms_1');
+        map.getPane('pane_Bahrain_Date_Palms_1').style.zIndex = 401;
+        map.getPane('pane_Bahrain_Date_Palms_1').style['mix-blend-mode'] = 'normal';
+        var layer_Bahrain_Date_Palms_1 = new L.geoJson(json_Bahrain_Date_Palms_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Bahrain_DatePalms_1',
-            layerName: 'layer_Bahrain_DatePalms_1',
-            pane: 'pane_Bahrain_DatePalms_1',
-            onEachFeature: pop_Bahrain_DatePalms_1,
+            dataVar: 'json_Bahrain_Date_Palms_1',
+            layerName: 'layer_Bahrain_Date_Palms_1',
+            pane: 'pane_Bahrain_Date_Palms_1',
+            onEachFeature: pop_Bahrain_Date_Palms_1,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_Bahrain_DatePalms_1_0(feature));
+                return L.circleMarker(latlng, style_Bahrain_Date_Palms_1_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Bahrain_DatePalms_1);
-        map.addLayer(layer_Bahrain_DatePalms_1);
+        bounds_group.addLayer(layer_Bahrain_Date_Palms_1);
+        map.addLayer(layer_Bahrain_Date_Palms_1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Bahrain_DatePalms<br /><table><tr><td style="text-align: center;"><img src="legend/Bahrain_DatePalms_1_30014000.png" /></td><td>300 - 1400 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_DatePalms_1_140021821.png" /></td><td>1400 - 2182 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_DatePalms_1_218246002.png" /></td><td>2182 - 4600 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_DatePalms_1_460084303.png" /></td><td>4600 - 8430 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_DatePalms_1_8430190004.png" /></td><td>8430 - 19000 </td></tr></table>': layer_Bahrain_DatePalms_1,"Wikimedia Map": layer_WikimediaMap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'Bahrain_Date_Palms<br /><table><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_30014000.png" /></td><td>300 - 1400 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_140024201.png" /></td><td>1400 - 2420 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_242048602.png" /></td><td>2420 - 4860 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_486082903.png" /></td><td>4860 - 8290 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_8290190004.png" /></td><td>8290 - 19000 </td></tr></table>': layer_Bahrain_Date_Palms_1,"Wikimedia Map": layer_WikimediaMap_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
