@@ -54,19 +54,19 @@
             }
             map.setMaxBounds(map.getBounds());
         }
-        map.createPane('pane_WikimediaMap_0');
-        map.getPane('pane_WikimediaMap_0').style.zIndex = 400;
-        var layer_WikimediaMap_0 = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
-            pane: 'pane_WikimediaMap_0',
+        map.createPane('pane_OSMStandard_0');
+        map.getPane('pane_OSMStandard_0').style.zIndex = 400;
+        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OSMStandard_0',
             opacity: 1.0,
-            attribution: '',
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
             minZoom: 1,
             maxZoom: 28,
             minNativeZoom: 0,
-            maxNativeZoom: 18
+            maxNativeZoom: 19
         });
-        layer_WikimediaMap_0;
-        map.addLayer(layer_WikimediaMap_0);
+        layer_OSMStandard_0;
+        map.addLayer(layer_OSMStandard_0);
         function pop_Bahrain_Date_Palms_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -185,7 +185,7 @@
         bounds_group.addLayer(layer_Bahrain_Date_Palms_1);
         map.addLayer(layer_Bahrain_Date_Palms_1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Bahrain_Date_Palms<br /><table><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_30014000.png" /></td><td>300 - 1400 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_140024201.png" /></td><td>1400 - 2420 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_242048602.png" /></td><td>2420 - 4860 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_486082903.png" /></td><td>4860 - 8290 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_8290190004.png" /></td><td>8290 - 19000 </td></tr></table>': layer_Bahrain_Date_Palms_1,"Wikimedia Map": layer_WikimediaMap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'Bahrain_Date_Palms<br /><table><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_30014000.png" /></td><td>300 - 1400 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_140024201.png" /></td><td>1400 - 2420 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_242048602.png" /></td><td>2420 - 4860 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_486082903.png" /></td><td>4860 - 8290 </td></tr><tr><td style="text-align: center;"><img src="legend/Bahrain_Date_Palms_1_8290190004.png" /></td><td>8290 - 19000 </td></tr></table>': layer_Bahrain_Date_Palms_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
